@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  netdata:
+  - apiVersion: v1
+    appVersion: v1.20.0
+    created: "2020-03-04T12:22:38.35979+02:00"
+    description: Real-time performance monitoring, done right! https://my-netdata.io/
+    digest: b4d32c61fc35e34f011fdb87a9623f9a79e843c966d75084d77c87ba0c9893b7
+    home: https://github.com/netdata/netdata
+    maintainers:
+    - email: chris@netdata.cloud
+      name: Chris Akritidis
+    - email: vryumin@gmail.com
+      name: Vladimir Ryumin
+    - email: karuppiah7890@gmail.com
+      name: Karuppiah Natarajan
+    - email: kamikaze.ua@gmail.com
+      name: Oleksii Kravchenko
+    name: netdata
+    urls:
+    - https://github.com/AspiraLimited/netdata-helmchart/releases/download/netdata-1.1.13/netdata-1.1.13.tgz
+    version: 1.1.13
+generated: "2020-03-04T12:22:37.783493+02:00"
