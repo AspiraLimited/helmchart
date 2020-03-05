@@ -34,7 +34,7 @@ ingress:
 rbac:
   create: true
   pspEnabled: true
-  
+
 serviceAccount:
   create: true
   name: netdata
@@ -48,6 +48,8 @@ master:
     # requests:
     #  cpu: 4
     #  memory: 4096Mi
+
+  terminationGracePeriodSeconds: 300
 
   nodeSelector: {}
 
@@ -141,6 +143,8 @@ slave:
     # requests:
     #  cpu: 4
     #  memory: 4096Mi
+
+  terminationGracePeriodSeconds: 300
 
   nodeSelector: {}
 

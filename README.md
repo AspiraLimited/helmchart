@@ -72,6 +72,7 @@ Parameter | Description | Default
 `clusterrole.name` | Name of the cluster role linked with the service account | `netdata`
 `APIKEY` | The key shared between the master and the slave netdata for streaming | `11111111-2222-3333-4444-555555555555`
 `master.resources` | Resources for the master statefulset | `{}`
+`master.terminationGracePeriodSeconds` | Duration in seconds the pod needs to terminate gracefully | `300`
 `master.nodeSelector` | Node selector for the master statefulset | `{}`
 `master.tolerations` | Tolerations settings for the master statefulset | `[]`
 `master.affinity` | Affinity settings for the master statefulset | `{}`
@@ -87,6 +88,7 @@ Parameter | Description | Default
 `master.configs` | Manage custom master's configs | See [Configuration files](#configuration-files).
 `slave.enabled` | Install slave daemonset to gather data from nodes | `true`
 `slave.resources` | Resources for the slave daemonsets | `{}`
+`slave.terminationGracePeriodSeconds` | Duration in seconds the pod needs to terminate gracefully | `30`
 `slave.nodeSelector` | Node selector for the slave daemonsets | `{}`
 `slave.tolerations` | Tolerations settings for the slave daemonsets | `- operator: Exists` with `effect: NoSchedule`
 `slave.affinity` | Affinity settings for the slave daemonsets | `{}`
